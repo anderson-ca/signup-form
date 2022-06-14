@@ -76,13 +76,13 @@ section:nth-child(1) > h2 {
 
 /* --- button section --- */
 section:nth-child(2) {
-    border: solid 0.5px red;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    gap: 1.5vh;
-    flex-basis: auto;
+  border: solid 0.5px red;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  gap: 1.5vh;
+  flex-basis: auto;
 }
 
 section:nth-child(2) > article {
@@ -96,7 +96,7 @@ section:nth-child(2) > article {
   border-radius: 5%;
 }
 
-section:nth-child(2) > article > p > span{
+section:nth-child(2) > article > p > span {
   /* border: solid 1px blue; */
   font-weight: bold;
 }
@@ -104,4 +104,24 @@ section:nth-child(2) > article > p > span{
 form {
   background-color: #ffffff;
   border-radius: 0.5rem;
+}
+
+form > p {
+  color: #ceccda;
+  font-size: 0.7rem;
+  padding: 1.2vh 6%;
+}
+
+form > p > span {
+  font-weight: bold;
+  color: #e88c97;
+}
+
+button {
+  background-color: #37CC8A;
+  color: var(--primary-font-color);
+  font-size: 0.8rem;
+  border: none;
+  padding: 1.7vh 0;
+  width: 80vw;
 }
