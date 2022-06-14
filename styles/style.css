@@ -74,7 +74,7 @@ section:nth-child(1) > h2 {
   padding: 0 3%;
 }
 
-/* --- button section --- */
+/* --- bottom section --- */
 section:nth-child(2) {
   border: solid 0.5px red;
   width: 100%;
