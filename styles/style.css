@@ -5,6 +5,7 @@
   --primary-font: "Poppins", sans-serif;
   --font-size: 16px;
   /* colors */
+  --primary-font-color: #fff0e9;
   --primary-red: hsl(0, 100%, 74%);
   --primary-green: hsl(154, 59%, 51%);
   --accent-blue: hsl(248, 32%, 49%);
@@ -38,4 +39,40 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/* /////////////////////// */
+.container {
+  border: solid 3px red;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-color: var(--primary-red);
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2vh;
+  text-align: center;
+}
+
+.top-text {
+  color: var(--primary-font-color);
+  border: solid 3px green;
+  width: 100%;
+  padding: 10vh 4% 6vh 4%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 3vh;
+}
+
+.top-text > h2 {
+  border: solid 2px red;
+  padding: 0 3%;
+}
+
+.top-text > * {
+  border: solid 1px blue;
 }
