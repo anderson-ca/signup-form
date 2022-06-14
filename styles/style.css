@@ -76,7 +76,7 @@ section:nth-child(1) > h2 {
 
 /* --- bottom section --- */
 section:nth-child(2) {
-  border: solid 0.5px red;
+  /* border: solid 0.5px red; */
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -93,7 +93,7 @@ section:nth-child(2) > article {
   font-weight: 400;
   padding: 2vh 8vw;
   margin: 1vh 0.5%;
-  border-radius: 5%;
+  border-radius: 0.5rem;
 }
 
 section:nth-child(2) > article > p > span {
@@ -103,7 +103,15 @@ section:nth-child(2) > article > p > span {
 
 form {
   background-color: #ffffff;
+  padding-top: 1.5rem;
   border-radius: 0.5rem;
+}
+
+input {
+  border: solid 1px #ededed;
+  padding: 0.7rem 0.5rem;
+  font-weight: bold;
+  width: 90%;
 }
 
 form > p {
@@ -117,11 +125,24 @@ form > p > span {
   color: #e88c97;
 }
 
+ul {
+  /* border: solid 2px red; */
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5vh;
+}
+
+li {
+  /* border: solid 1px blue; */
+}
+
 button {
-  background-color: #37CC8A;
+  background-color: #37cc8a;
   color: var(--primary-font-color);
   font-size: 0.8rem;
   border: none;
-  padding: 1.7vh 0;
-  width: 80vw;
+  padding: 1.5vh 0;
+  width: 82vw;
+  border-radius: 0.5rem;
+  border-bottom: 0.3rem #30b97f solid;
 }
