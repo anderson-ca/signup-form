@@ -41,70 +41,67 @@ a {
   list-style: none;
 }
 
-/* /////////////////////// */
+/* ///////////////////////////////////////////// */
+/* ///////////// desktop, tablet /////////////// */
+/* ///////////////////////////////////////////// */
 .container {
   /* border: solid 3px red; */
   min-width: 100vw;
   min-height: 100vh;
   background-image: url("../images/bg-intro-mobile.png");
   background-color: var(--primary-red);
-  padding: 10vh 4% 0 4%;
+  color: var(--primary-font-color);
+  padding: 0 10%;
+  text-align: center;
 
   display: flex;
-  flex-flow: column nowrap;
+  gap: 7%;
+  flex-flow: row nowrap;
   justify-content: flex-start;
-  align-items: center;
-  gap: 5.5vh;
-  text-align: center;
 }
 /* --- top section --- */
 section:nth-child(1) {
-  color: var(--primary-font-color);
-  /* border: solid 3px green; */
-  width: 100%;
+  /* border: solid 2px blue; */
+  /* width: 100%; */
+  /* font-size: 2rem; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  align-items: flex-end;
   gap: 3vh;
-  flex-basis: 30vh;
+  flex-basis: 35vw;
+  text-align: start;
 }
 
 section:nth-child(1) > h2 {
   /* border: solid 2px red; */
+  font-size: 2.5rem;
   padding: 0 3%;
 }
 
 /* --- bottom section --- */
 section:nth-child(2) {
-  /* border: solid 0.5px red; */
-  width: 100%;
+  /* border: solid 2px purple; */
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
-  gap: 1.5vh;
-  flex-basis: auto;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 section:nth-child(2) > article {
-  /* border: solid 1px blue; */
-  color: var(--primary-font-color);
   background-color: var(--accent-blue);
   font-size: 0.9rem;
   font-weight: 400;
-  padding: 2vh 8vw;
+  padding: 1.8vh 8vw;
   margin: 1vh 0.5%;
   border-radius: 0.5rem;
-}
-
-section:nth-child(2) > article > p > span {
-  /* border: solid 1px blue; */
-  font-weight: bold;
 }
 
 form {
   background-color: #ffffff;
   padding-top: 1.5rem;
   border-radius: 0.5rem;
+  width: 40vw;
 }
 
 input {
@@ -132,17 +129,55 @@ ul {
   gap: 1.5vh;
 }
 
-li {
-  /* border: solid 1px blue; */
-}
-
 button {
   background-color: #37cc8a;
   color: var(--primary-font-color);
   font-size: 0.8rem;
   border: none;
   padding: 1.5vh 0;
-  width: 82vw;
+  width: 90%;
   border-radius: 0.5rem;
   border-bottom: 0.3rem #30b97f solid;
+}
+
+/* //////////////////////////////////// */
+/* ///////////// mobile /////////////// */
+/* //////////////////////////////////// */
+@media screen and (max-width: 367px) {
+  .container {
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding: 10vh 4% 0 4%;
+  }
+  /* --- top section --- */
+  section:nth-child(1) {
+    /* border: solid 3px green; */
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 3vh;
+    flex-basis: 30vh;
+  }
+
+  section:nth-child(1) > h2 {
+    /* border: solid 2px red; */
+    padding: 0 3%;
+  }
+
+  /* --- bottom section --- */
+  section:nth-child(2) {
+    /* border: solid 0.5px red; */
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 1.5vh;
+    flex-basis: auto;
+  }
+
+  section:nth-child(2) > article > p > span {
+    /* border: solid 1px blue; */
+    font-weight: bold;
+  }
 }
