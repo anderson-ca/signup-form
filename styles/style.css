@@ -48,7 +48,7 @@ a {
   /* border: solid 3px red; */
   min-width: 100vw;
   min-height: 100vh;
-  background-image: url("../images/bg-intro-mobile.png");
+  background-image: url("../images/bg-intro-desktop.png");
   background-color: var(--primary-red);
   color: var(--primary-font-color);
   padding: 0 10%;
@@ -61,9 +61,6 @@ a {
 }
 /* --- top section --- */
 section:nth-child(1) {
-  /* border: solid 2px blue; */
-  /* width: 100%; */
-  /* font-size: 2rem; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -145,6 +142,7 @@ button {
 /* //////////////////////////////////// */
 @media screen and (max-width: 367px) {
   .container {
+    background-image: url("../images/bg-intro-mobile.png");
     flex-flow: column nowrap;
     justify-content: flex-start;
     padding: 10vh 4% 0 4%;
@@ -158,6 +156,7 @@ button {
     justify-content: center;
     gap: 3vh;
     flex-basis: 30vh;
+    text-align: center;
   }
 
   section:nth-child(1) > h2 {
@@ -172,12 +171,25 @@ button {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    gap: 1.5vh;
     flex-basis: auto;
+    margin-top: 2rem;
+    gap: 1.5vh;
+  }
+
+  section:nth-child(2) > article {
+    padding: 1.8vh 10vw;
+  }
+
+  section:nth-child(2) > article > p {
+    word-wrap: break-word;
   }
 
   section:nth-child(2) > article > p > span {
     /* border: solid 1px blue; */
     font-weight: bold;
+  }
+
+  form {
+    width: auto;
   }
 }
