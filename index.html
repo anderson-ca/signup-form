@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -13,18 +11,8 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
 
+    <script defer src="./index.js"></script>
     <title>Frontend Mentor | Intro component with sign up form</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div class="container">
@@ -40,26 +28,50 @@
         <article>
           <p><span>Try it free 7 days</span> then $20/mo thereafter</p>
         </article>
-        <form action="">
+        <form id="form" action="">
           <ul>
             <li>
-              <input type="text" placeholder="First Name" />
+              <input id="first_name" type="text" placeholder="First Name" />
+              <img
+                class="error-icon"
+                src="./images/warning.png"
+                alt="error warning"
+              />
+              <small>First name cannot be empty.</small>
             </li>
             <li>
-              <input type="text" placeholder="Last Name" />
+              <input id="last_name" type="text" placeholder="Last Name" />
+              <img
+                class="error-icon"
+                src="./images/warning.png"
+                alt="error warning"
+              />
+              <small>Last name cannot be empty.</small>
             </li>
             <li>
-              <input type="email" placeholder="Email Address" />
+              <input id="email" type="email" placeholder="Email Address" />
+              <img
+                class="error-icon"
+                src="./images/warning.png"
+                alt="error warning"
+              />
+              <small>Looks like this is not an email.</small>
             </li>
             <li>
-              <input type="password" placeholder="Password" />
+              <input id="password" type="password" placeholder="Password" />
+              <img
+                class="error-icon"
+                src="./images/warning.png"
+                alt="error warning"
+              />
+              <small>Password cannot be empty.</small>
             </li>
             <li>
-              <button>CLAIM YOUR FREE TRIAL</button>
+              <button id="submit_btn">CLAIM YOUR FREE TRIAL</button>
             </li>
           </ul>
           <p>
-            By clicking on the button you are agreeing to<br>our
+            By clicking on the button you are agreeing to<br />our
             <span>Terms and Services</span>
           </p>
         </form>
