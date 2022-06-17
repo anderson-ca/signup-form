@@ -1,7 +1,7 @@
-let first_name = document.getElementById("firstName");
-let last_name = document.getElementById("lastName");
-let email = document.getElementById("Email");
-let password = document.getElementById("Password");
+let firstName = document.getElementById("first_name");
+let lastName = document.getElementById("last_name");
+let email = document.getElementById("email");
+let password = document.getElementById("password");
 let form = document.getElementById("form");
 let errorElements = document.getElementsByClassName("noshow");
 let regex = RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
@@ -11,26 +11,26 @@ form.addEventListener("submit", (e) => {
 
   console.log(regex.test(email.children[0].value));
 
-  if (first_name.children[0].value === "") {
-    first_name.children[0].placeholder = "";
-    first_name.children[0].classList.add("error");
-    first_name.children[1].classList.remove("noshow");
-    first_name.children[2].classList.remove("noshow");
+  if (firstName.children[0].value === "") {
+    firstName.children[0].placeholder = "";
+    firstName.children[0].classList.add("error");
+    firstName.children[1].classList.remove("noshow");
+    firstName.children[2].classList.remove("noshow");
   } else {
-    first_name.children[0].classList.remove("error");
-    first_name.children[1].classList.add("noshow");
-    first_name.children[2].classList.add("noshow");
+    firstName.children[0].classList.remove("error");
+    firstName.children[1].classList.add("noshow");
+    firstName.children[2].classList.add("noshow");
   }
 
   if (last_name.children[0].value === "") {
-    last_name.children[0].placeholder = "";
-    last_name.children[0].classList.add("error");
-    last_name.children[1].classList.remove("noshow");
-    last_name.children[2].classList.remove("noshow");
+    lastName.children[0].placeholder = "";
+    lastName.children[0].classList.add("error");
+    lastName.children[1].classList.remove("noshow");
+    lastName.children[2].classList.remove("noshow");
   } else {
-    last_name.children[0].classList.remove("error");
-    last_name.children[1].classList.add("noshow");
-    last_name.children[2].classList.add("noshow");
+    lastName.children[0].classList.remove("error");
+    lastName.children[1].classList.add("noshow");
+    lastName.children[2].classList.add("noshow");
   }
 
   if (email.children[0].value === "") {

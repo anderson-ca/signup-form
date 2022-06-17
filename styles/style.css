@@ -41,11 +41,8 @@ a {
   list-style: none;
 }
 
-/* ///////////////////////////////////////////// */
 /* ///////////// desktop, tablet /////////////// */
-/* ///////////////////////////////////////////// */
 .container {
-  /* border: solid 3px red; */
   min-width: 100vw;
   min-height: 100vh;
   background-image: url("../images/bg-intro-desktop.png");
@@ -80,7 +77,6 @@ small {
   font-size: 0.6em;
   color: var(--primary-red);
   align-self: flex-end;
-
 }
 
 .error-icon {
@@ -88,7 +84,6 @@ small {
   position: absolute;
   top: 15%;
   right: 5%;
-
 }
 
 .noshow {
@@ -118,7 +113,6 @@ section:nth-child(1) > h2 {
 
 /* --- bottom section --- */
 section:nth-child(2) {
-  /* border: solid 2px purple; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -161,7 +155,6 @@ form > p > span {
 }
 
 ul {
-  /* border: solid 2px red; */
   display: flex;
   padding: 0 6%;
   flex-flow: column nowrap;
@@ -179,9 +172,7 @@ button {
   border-bottom: 0.3rem #30b97f solid;
 }
 
-/* //////////////////////////////////// */
 /* ///////////// mobile /////////////// */
-/* //////////////////////////////////// */
 @media screen and (max-width: 575px) {
   .container {
     background-image: url("../images/bg-intro-mobile.png");
@@ -191,7 +182,6 @@ button {
   }
   /* --- top section --- */
   section:nth-child(1) {
-    /* border: solid 3px green; */
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
@@ -207,7 +197,6 @@ button {
 
   /* --- bottom section --- */
   section:nth-child(2) {
-
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
