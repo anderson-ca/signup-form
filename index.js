@@ -4,6 +4,7 @@ let email = document.getElementById("email");
 let password = document.getElementById("password");
 let form = document.getElementById("form");
 let errorElements = document.getElementsByClassName("noshow");
+// check if email is valid.
 let regex = RegExp("[a-z0-9]+@[a-z]+.[a-z]{2,3}");
 
 form.addEventListener("submit", (e) => {
